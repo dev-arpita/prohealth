@@ -1,85 +1,76 @@
-*, *::before, ::after {
-    box-sizing: border-box;
+*,
+*::before,
+::after {
+  box-sizing: border-box;
 }
 /* Custom CSS */
 
 :root {
-    --font-clr : #f5f4f2;
-    --primary-font-clr :383735;
+  --font-clr: #f5f4f2;
+  --primary-font-clr: 383735;
 }
 body {
-    font-family: sans-serif;
-    font-size: 16px;
-    margin: 0;
-    height: 100vh;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+  height: 100vh;
 }
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
-a{
-    text-decoration: none;
-    color: var(--font-clr) ;
-    letter-spacing: 1px;
-    font-weight: 600;
-    text-shadow: 0 0 5px rgb(0, 0, 0);
+a {
+  text-decoration: none;
+  color: var(--font-clr);
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 /* Utility class */
-    .flex{
-        display: flex;
-    }
-
-header{
-    padding: 1rem 2rem;
-    justify-content: space-between;
-    /* color: var(--font-clr); */
-    height: 100%;
-        background-repeat: no-repeat;
-        background-image: url("https://plus.unsplash.com/premium_photo-1673958772224-2f67e443634a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
-        background-position: left;
-        background-size: cover;
+.flex {
+  display: flex;
 }
+
 header .flex {
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .logo {
-    align-items: center;
-    gap: 5px;
+  align-items: center;
+  gap: 5px;
 }
 .logo-icon {
-    font-size: 2rem;
-    /* color:; */
+  font-size: 2rem;
 }
 .logo-name {
-    font-size: 1.2rem;
-    font-weight: 900;
-    text-shadow: 0 0 5px #fff;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-shadow: 0 0 5px #fff;
 }
 .nav-menu {
-    gap: 0.5rem;
+  gap: 0.5rem;
 }
 .user-menu-section {
-    gap: 15px;
-    color: var(--primary-font-clr);
+  gap: 15px;
+  color: var(--primary-font-clr);
 }
 .left-col {
-    background: #fff;
-    max-width: 500px;
-    text-align: center;
+  background: #fff;
+  max-width: 500px;
+  text-align: center;
 }
 .hero-desc-title {
-    margin: 0;
+  margin: 0;
 }
 .divider {
-    height: 50px;
-    width: 10px;
-    background: black;
+  height: 50px;
+  width: 10px;
+  background: black;
 }
-main{
-    height: 100%;
+main {
+  height: 100%;
 }
 .hero {
-    /* height: 100%;
+  /* height: 100%;
     background-repeat: no-repeat;
     background-image: url("https://plus.unsplash.com/premium_photo-1673958772224-2f67e443634a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"); */
 }
