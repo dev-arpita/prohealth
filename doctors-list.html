@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f4c08ca399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <title>Digital healthcare solution</title>
+</head>
+<body>
+    <header class="fixed bg-white top-0 left-0 right-0 h-auto px-2 py-4 text-stone-600 shadow-xl">
+        <!-- nav-menu -->
+        <div class="flex justify-between items-center md:px-10 md:PY-4">
+            <nav class="flex md:flex-1 justify-between md:mr-16">
+                <!-- logo -->
+                <div class="flex items-center gap-2">
+                    <span class="fa-solid fa-notes-medical text-2xl"></span>
+                    <p class="text-xl font-bold font-['Poppins']">ProHealth</p>
+                </div>
+                <ul class="flex gap-4">
+                    <li class=""><a href="/">Home</a></li>
+                    <li class=""><a href="">About</a></li>
+                    <li class="border-b-2 border-black font-bold"><a href="/doctors-list.html">Find Doctor</a></li>
+                    <li class=""><a href="/blog.html">Blog</a></li>
+                    <li class=""><a href="">Contact</a></li>
+                </ul>
+    
+            </nav>
+            <div class="flex gap-4">
+                <span class="fa-solid fa-magnifying-glass"></span>
+                <span class="fa-solid fa-bars"></span>
+            </div>
+        </div>
+        <div class="flex flex-col justify-between mt-14 px-10">
+            <!-- breadcrumb -->
+            <div class="">
+                <span class="text-sm">Home /</span>
+                <span class="text-sm">Blog /</span>
+                <span class="text-sm">Read</span>
+            </div>
+            <div class="pb-12 pt-4">
+                <h1 class="text-4xl text-stone-700 font-bold">Psychology and Life Style</h1>
+            </div>
+            <div class="flex justify-between">
+                <nav class="flex" aria-label="category">
+                    <ul class="flex items-center gap-8">
+                        <li class=" rounded-full p-4 py-1 bg-stone-700 text-gray-100"><a href="" class="">All</a></li>
+                        <li class=""><a href="" class="border border-stone-700 rounded-full p-4 py-1.5">Emergency</a></li>
+                        <li class=""><a href="" class="border border-stone-700 rounded-full p-4 py-1.5">Pediatric</a></li>
+                        <li class=""><a href="" class="border border-stone-700 rounded-full p-4 py-1.5">Cardiology</a></li>
+                        <li class=""><a href="" class="border border-stone-700 rounded-full p-4 py-1.5">Psychiatry</a></li>
+                        <li class=""><a href="" class="border border-stone-700 rounded-full p-4 py-1.5">Others</a></li>
+                    </ul>
+                </nav>
+                <div class="flex justify-end items-center w-full mt-2 gap-6 md:mt-0 md:w-1/6">
+                    <span class="text-stone-400 text-sm">Showing 6 items</span>
+                    <div class="flex gap-2">
+                        <img class="w-4 h-4 self-center " src="/images/list1.png" alt="">
+                        <img class="w-4 h-4 self-center" src="/images/grid1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mt-60">
+        <div class="bg-gradient-to-l from-lime-500 via-lime-200 to-Emerald-50 ">
+            <div class="grid grid-cols-2 gap-8 px-14 py-20 border border-black mx-20">
+                <div class="flex justify-end pr-8 items-center">
+                    <img class="w-[280px] h-[350px] object-cover rounded-lg" src="/images/doctor.jpg" alt="Doctor is smiling">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-2xl">Dr. Sarah Lee, MD, FAPA</h2>
+                    <span class="">Board-certified psychiatrist</span>
+                    <p class="">With more than 10 years of experience learning human Psychology. Dr. Sarah is an expert in managing mood disorder and anxiety disorder</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="flex flex-col">
+                <h2 class="text-xl">Degrees <i class="fa-solid fa-graduation-cap"></i></h2>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
