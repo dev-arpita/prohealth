@@ -11,8 +11,8 @@
         rel="stylesheet">
     <title>Digital healthcare solution</title>
 </head>
-<body>
-    <header class="fixed bg-white top-0 left-0 right-0 h-auto px-2 py-4 text-stone-600 shadow-xl">
+<body class="relative">
+    <header class="fixed bg-white top-0 left-0 right-0 h-auto px-2 py-4 text-stone-600 shadow-xl z-20">
         <!-- nav-menu -->
         <div class="flex justify-between items-center md:px-10 md:PY-4">
             <nav class="flex md:flex-1 justify-between md:mr-16">
@@ -67,24 +67,66 @@
         </div>
     </header>
     <main class="mt-60">
-        <div class="bg-gradient-to-l from-stone-500 via-stone-400 to-stone-100 ">
-            <div class="grid grid-cols-2 gap-8 px-14 py-20 border border-black mx-20">
-                <div class="flex flex-col justify-end pr-8">
-                    <img class="w-[280px] h-[350px] object-cover rounded-lg" src="/images/doctor.jpg" alt="Doctor is smiling">
-                    <span class="py-4 bg-stone-700 text-gray-100 pl-4">Psychiatry Department</span>
-                </div>
-                <div class="flex flex-col justify-center">
+        <div class="ralative bg-gradient-to-l from-stone-500 via-stone-400 to-stone-100 ">
+            <div class="flex justify-end gap-8 px-14 py-28 mx-20">
+                <div class="flex flex-col w-1/2 justify-center">
                     <h2 class="text-2xl">Dr. Sarah Lee, MD, FAPA</h2>
                     <span class="">Board-certified psychiatrist</span>
                     <p class="">With more than 10 years of experience learning human Psychology. Dr. Sarah is an expert in managing mood disorder and anxiety disorder</p>
                 </div>
             </div>
         </div>
-        <div class="">
-            <div class="flex flex-col">
-                <h2 class="text-xl">Degrees <i class="fa-solid fa-graduation-cap"></i></h2>
+        <div class="relative grid grid-cols-2">
+            <div class=" ">
+                <div class="flex w-[350px] h-[180px] flex-col justify-center rounded-lg mb-16">
+                    <img class="w-full object-cover " src="/images/doctor.jpg" alt="Doctor is smiling">
+                    <span class="py-4 bg-stone-700 text-gray-100 pl-4">Psychiatry Department</span>
+                </div>
+                <ul class="absolute top-0 right-[15%] rounded flex py-3 px-6 bg-blue-500 w-[200px] justify-center gap-2 social_links">
+                    <li class="rounded-full bg-white px-2">
+                        <i class="fa-brands fa-facebook-f" style="color: #3671d9;"></i>
+                    </li>
+                    <li class="rounded-full bg-white px-1.5">
+                        <i class="fa-brands fa-linkedin-in" style="color: #3671d9;"></i>
+                    </li>
+                    <li class="rounded-full bg-white px-1">
+                        <i class="fa-brands fa-twitter" style="color: #3671d9;"></i>
+                    </li>
+                </ul>
             </div>
-        </div>
+            <div class="mt-20 flex flex-col justify-end">
+                <h2 class="text-xl mb-6">Degrees <i class="fa-solid fa-graduation-cap"></i></h2>
+                <ul class="list-disc pl-10">
+                    <li class="">University of California, San Francisco</li>
+                    <p class="text-gray-400">medical degree</p>
+                    <li class="">University of California, San Francisco</li>
+                    <p class="text-gray-400">medical degree</p>
+                    <li class="">University of California, San Francisco</li>
+                    <p class="text-gray-400">medical degree</p>
+                </ul>
+            </div>
+            <!-- <div class="grid grid-cols-2"> -->
+                <!--Contact Us -->
+                <div class="flex flex-col gap-y-8">
+                    <div class="">
+                        <h2 class="">Contact Info</h2>
+                        <div class=""><i class="fa-solid fa-phone" style="color: #e0e8f5;"></i>033-1234-5678</div>
+                        <div class=""><i class="fa-solid fa-envelope" style="color: #e0e8f5;"></i>sarahlee@prohealth.com</div>
+                    </div>
+                    <h2 class="">Appointment Schedules</h2>
+                </div>
+                <div class="">
+                    <h2 class="">Experiences:</h2>
+                    <ul class="list-disc pl-10">
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                    </ul>
+                </div>
+            </div>
+
+        <!-- </div> -->
     </main>
 </body>
 </html>
