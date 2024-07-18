@@ -13,10 +13,10 @@
 </head>
 <body class="relative">
     <header class="fixed bg-white top-0 left-0 right-0 h-auto px-2 py-4 text-stone-600 shadow-xl z-20">
-        <!-- nav-menu -->
+      
         <div class="flex justify-between items-center md:px-10 md:PY-4">
             <nav class="flex md:flex-1 justify-between md:mr-16">
-                <!-- logo -->
+                
                 <div class="flex items-center gap-2">
                     <span class="fa-solid fa-notes-medical text-2xl"></span>
                     <p class="text-xl font-bold font-['Poppins']">ProHealth</p>
@@ -36,7 +36,6 @@
             </div>
         </div>
         <div class="flex flex-col justify-between mt-14 px-10">
-            <!-- breadcrumb -->
             <div class="">
                 <span class="text-sm">Home /</span>
                 <span class="text-sm">Blog /</span>
@@ -66,9 +65,9 @@
             </div>
         </div>
     </header>
-    <main class="mt-60">
-        <!-- <div class="ralative bg-gradient-to-l from-stone-500 via-stone-400 to-stone-100 "> -->
-            <div class="bg-gradient-to-r from-[#94b8b8] ...">
+    <main class="mt-60 w-screen">
+
+        <div class="bg-gradient-to-r from-[#94b8b8] ...">
             <div class="flex justify-end gap-8 px-14 py-28 mx-20">
                 <div class="flex flex-col w-1/2 mb-[-80px] justify-center">
                     <h2 class="text-2xl">Dr. Sarah Lee, MD, FAPA</h2>
@@ -77,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="relative grid grid-rows-2 grid-cols-2 p-6">
+        <div class="relative grid  grid-cols-2 p-6">
             <div>
                 <div class="flex flex-col justify-center">
                     <div class="w-[70%] mt-[-200px] ml-20 ">
@@ -99,8 +98,10 @@
             </div>
             <!-- Degrees -->
             <div class="mt-20 flex flex-col justify-start">
-                <h2 class="text-xl mb-4 pl-2 pt-4">Degrees <i class="fa-solid fa-graduation-cap"></i></h2>
-                <ul class="list-disc pb-10">
+                <h2 class="text-xl mb-4 pl-2 pt-4 text-blue-900 font-bold">Degrees 
+                    <span class="fa-solid fa-graduation-cap text-blue-700"></span>
+                </h2>
+                <ul class="list-disc pl-8 pb-10">
                     <li class="">University of California, San Francisco</li>
                     <p class="text-gray-400">medical degree</p>
                     <li class="">University of California, San Francisco</li>
@@ -109,30 +110,39 @@
                     <p class="text-gray-400">medical degree</p>
                 </ul>
             </div>
+        <!--Contact info -->
+            <div class="grid grid-rows-2 md:grid-cols-2 w-screen p-16 justify-between ">
 
-            <div class="flex flex-col-reverse md:flex-row w-screen p-16 justify-between  border border-red-500">
-
-            <!--Contact Us -->
-                <div class="flex flex-col gap-8 align-center border border-red-500">
+                            <!--Contact Us -->
+                <div class="flex flex-col gap-8 align-center">
                     <div class="">
-                        <h2 class="text-lg">
-                            <span class="fa-solid fa-address-book"></span>
-                            Contact Info</h2>
-                        <div class=""><i class="fa-solid fa-phone" style="color: #e0e8f5;"></i>033-1234-5678</div>
-                        <div class=""><i class="fa-solid fa-envelope" style="color: #e0e8f5;"></i>sarahlee@prohealth.com</div>
+                        <h2 class="text-xl text-blue-900 font-bold">
+                            Contact Info
+                            <span class="fa-solid fa-address-book text-blue-700"></span>
+                        </h2>
+                        <div class="text-slate-500 pl-4 pt-2"><span class="fa-solid fa-phone pr-4" style="color: #e0e8f5;"></span>033-1234-5678</div>
+                        <div class="text-slate-500 pl-4 pt-2"><span class="fa-solid fa-envelope pr-4" style="color: #e0e8f5;"></span>sarahlee@prohealth.com</div>
                     </div>
-                    <h2 class="">Appointment Schedules</h2>
+                    <div class="flex gap-2 mt-20">
+                        <h2 class="text-xl text-blue-900 font-bold">
+                            Appointment Schedules
+                            <span class="fa-solid fa-calendar-days text-blue-700"></span>
+                        </h2>
+                        <!-- <span class="fa-solid fa-circle-chevron-down align-center"></span> -->
+                    </div>
                 </div>
                 <!-- Experiences -->
-                <div class="flex flex-col border border-red-500">
-                    <h2 class="text-lg">
-                        <span class="fa-solid fa-suitcase"></span>
-                        Experiences:</h2>
-                    <ul class="list-disc pl-10">
-                        <li class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, debitis!</li>
-                        <li class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, debitis!</li>
-                        <li class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, debitis!</li>
-                        <li class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, debitis!</li>
+                <div class="flex flex-col">
+                    <h2 class="text-xl text-blue-900 font-bold">
+                        Experiences:
+                        <span class="fa-solid fa-suitcase text-blue-700"></span>
+                    </h2>
+                    <ul class="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500 pl-10 leading-7">
+                        <li class="">Experience in hospitals, clinics, private practice, and community mental health centers.</li>
+                        <li class="">Working with or observing doctors, patients, and others in the medical field</li>
+                        <li class="">Optional fellowship in subspecialties like child and adolescent psychiatry, geriatric psychiatry,
+                             forensic psychiatry, or addiction psychiatry.</li>
+                        <li class="">Ongoing professional development to stay current with psychiatric advancements.</li>
                     </ul>
                 </div>
             </div>
