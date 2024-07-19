@@ -31,12 +31,21 @@
             </nav>
             <!-- search field -->
             <div class="hidden sm:hidden sm:order-2 lg:flex px-4 rounded-full items-center py-2 gap-4 bg-white">
-                <input type="text" placeholder="Search here">
+                <input type="text" class=" outline-0" placeholder="Search here">
                 <span class="fa-solid fa-magnifying-glass"></span>
             </div>
             <span class="fa-solid fa-magnifying-glass sm:ml-52 lg:hidden"></span>
             <!-- menu-btn -->
-            <span class="fa-solid fa-bars pl-3 sm:hidden"></span>
+            <span class="fa-solid fa-bars pl-3 sm:hidden" id="menu-btn"></span>
+            <div class="bg-white py-8 px-4 absolute r-0">
+                <ul class="sm:hidden sm:flex flex-col gap-4 self-center text-sm lg:text-base">
+                    <li class="drop-shadow-xl border-b-2 border-black font-bold"><a href="#">Home</a></li>
+                    <li class=""><a href="">About</a></li>
+                    <li class=""><a href="/doctors-list.html">Find Doctor</a></li>
+                    <li class=""><a href="/blog.html">Blog</a></li>
+                    <li class=""><a href="">Contact</a></li>
+                </ul>
+            </div>
         </div>
         <div class="flex flex-col md:flex-row md:justify-between mt-48 md:mt-10 md:mt-24 md:pr-8 lg:pr-16 px-2 mb-24 lg:px-6">
         <!-- left-col -->
@@ -119,5 +128,6 @@
     <footer>
 
     </footer>
+    <script src="/index.js"></script>
 </body>
 </html>
