@@ -2,6 +2,8 @@
 
 document.getElementById("menu-btn").addEventListener("click", ()=> console.log("clicked"))
 
+document.getElementById("close-btn").addEventListener("click", ()=> console.log("closed"))
+
 const getMenuBarHtml = ()=> {
   return   `
     <ul class="sm:hidden sm:flex flex-col gap-4 self-center text-sm lg:text-base">
