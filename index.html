@@ -12,7 +12,8 @@
     <title>Digital healthcare solution</title>
 </head>
 <body class="font-['Inter'] text-slate-800">
-    <header class="relative bg-[url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-contain bg-no-repeat bg-top sm:bg-center sm:bg-cover lg:bg-left-top h-full md:h-screen py-2 md:py-4 w-full text-stone-700">
+    <header class="relative bg-[url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] 
+    bg-contain bg-no-repeat bg-top sm:bg-center sm:bg-cover lg:bg-left-top h-full py-2 md:py-4 w-full text-stone-700">
         <!-- nav-menu -->
         <div class="flex justify-between items-center px-2 lg:px-6 md:px-4 md:py-2">
             <nav class="flex md:flex-1 justify-between md:mr-3 lg:mr-16 ">
@@ -35,14 +36,14 @@
                 <span class="fa-solid fa-magnifying-glass"></span>
             </div>
             <span class="fa-solid fa-magnifying-glass sm:ml-52 lg:hidden"></span>
-            <!-- -----------mobile-view----------- -->
-            <!-- menu-btn -->
+    <!-- -----------mobile-view----------- -->
+                <!-- menu-btn -->
             <span class="fa-solid fa-bars pl-3 sm:hidden" id="menu-btn"></span>
             <div class="hidden bg-white py-12 px-6 fixed right-0 z-50 top-0 w-full " id="mobile-menu">
                 <span class="fa-solid fa-xmark pb-4 block text-end" id="close-btn"></span>
                 <ul class="sm:hidden flex flex-col gap-y-5 self-center text-sm lg:text-base text-center ">
-                    <li class="drop-shadow-xl border-b-1.5 border-black font-bold scale-125  transition duration-150 ease-out hover:ease-in"><a href="#">Home</a></li>
-                    <li class=""><a href="">About</a></li>
+                    <li class="drop-shadow-xl border-b-1.5 border-black font-bold scale-125"><a href="#">Home</a></li>
+                    <li class=""><a href="#about">About</a></li>
                     <li class=""><a href="/doctors-list.html">Find Doctor</a></li>
                     <li class=""><a href="/blog.html">Blog</a></li>
                     <li class=""><a href="">Contact</a></li>
@@ -51,11 +52,15 @@
         </div>
         <div class="flex flex-col md:flex-row md:justify-between mt-48 md:mt-10 md:mt-24 md:pr-8 lg:pr-16 px-2 mb-24 lg:px-6">
         <!-- left-col -->
-            <div class=" backdrop-blur-sm bg-white/40 w-full md:w-2/5 md:mx-4 sm:px-4  lg:px-6 sm:mt-10 md:mt-0 sm:py-4 lg:py-10 md:drop-shadow-xl rounded-xl">
-                <h1 class="text-2xl md:text-3xl lg:text-5xl sm:text-state-900 font-bold drop-shadow-2xl pt-2 sm:pt-6 md:pt-0">Compassionate care, exceptional results.</h1>
+            <div class="backdrop-blur-sm bg-white/40 drop-shadow-2xl w-full md:w-1/2 lg:w-2/5 md:mx-4 pr-6 sm:px-4 
+             lg:px-6 sm:mt-20 mt-5 md:mt-12 sm:py-4 lg:py-10 md:pr-0 md:drop-shadow-xl rounded-xl ">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:text-state-900 font-bold  px-2 pt-2 sm:pt-6 md:pt-0">
+                    Compassionate care, exceptional results.</h2>
                 <div class="relative mt-6 flex flex-col lg:flex-row gap-8 px-2">
-                    <p class="font-bold text-lg text-stone-950">ProHealth</p>
-                    <p class="absolute top-4 w-24 h-1 bg-gray-200 md:bg-white mt-4"></p>
+                    <div class="relative w-full">
+                        <h1 class="font-bold text-lg md:text-xl lg:text-2xl xl:text-3xl text-state-950">ProHealth</h1>
+                        <p class="absolute top-6 w-full h-1 bg-gray-200 md:bg-white mt-4"></p>
+                    </div>
                     <p class="">Our team of experienced doctors and healthcare professionals are committed to providing quality care and personalized attention to our patients
                     </p>
                 </div>
@@ -68,29 +73,31 @@
                 </div>
                     
             </div>
-        <!-- right-col -->
-            <div class="absolute left-[5px] top-[12rem] md:static bg-gray-200 border rounded-full w-[170px] md:w-[220px] md:w-1/6 gap-2 self-start flex items-center py-0.5 md:py-1 px-3 mt-0 md:mt-[-30px] backdrop-blur-sm bg-white/30">
+        <!-- right-col / service satisfaction section -->
+            <div class="absolute top-12 md:top-[12rem] md:static bg-gray-200 border rounded-full w-[120px]
+             md:w-[220px] md:w-1/6 gap-2 self-start
+                 flex items-center py-0.5 md:py-1 px-1.5 sm:px-3 mt-0 md:mt-[-30px] backdrop-blur-sm bg-white/30">
                 <ul class="flex">
                     <li>
-                        <img src="/images/person.jpg" alt="" class="rounded-full w-6 md:w-10">
+                        <img src="/images/person.jpg" alt="" class="rounded-full w-7 md:w-14">
                     </li>
                     <li class="ml-[-12px]">
-                        <img src="/images/person.jpg" alt="" class="rounded-full w-6 md:w-10">
+                        <img src="/images/person.jpg" alt="" class="rounded-full w-7 md:w-14">
                     </li>
                     <li class="ml-[-12px]">
-                        <img src="/images/person.jpg" alt="" class="rounded-full w-6 md:w-10">
+                        <img src="/images/person.jpg" alt="" class="rounded-full w-7 md:w-14">
                     </li>
                 </ul>
-                <div class="relative flex flex-col self-end">
-                    <span class="absolute top-[-18px] md:top-[-15px] right-[-10px] bg-blue-500 w-6 rounded-full p-1 block">
+                <div class="relative flex flex-col sm:items-start items-center w-full">
+                    <span class="absolute top-[-10px] md:top-[-15px] right-[-10px] bg-blue-500 w-4 sm:w-6 rounded-full p-0.5 block">
                         <img src="/images/check-solid.svg" alt="" class="w-auto p-0.5">
                     </span>
-                    <span class="text-md md:text-lg text-stone-950">150K +</span>
-                    <span class="text-[10px] static">Patient Recovery</span>
+                    <span class="text-md text-sm md:text-xl text-stone-950">150K +</span>
+                    <span class="text-[7px] sm:text-[11px] static">Patient Recovery</span>
                 </div>
             </div>
             <!-- rating bar -->
-            <div class="absolute bottom-[-4rem] lg:bottom-0 right-0 md:p-4 left-0 md:left-auto md:w-11/12 lg:w-7/12 bg-gray-200 md:backdrop-blur-sm md:bg-white/40 flex gap-4 justify-around px-4 md:rounded-ss-3xl">
+            <div class="absolute bottom-[-4rem] md:bottom-0  lg:bottom-0 right-0 md:p-4 left-0 md:left-auto md:w-11/12 lg:w-7/12 bg-gray-200 md:backdrop-blur-sm md:bg-white/40 flex gap-4 justify-around px-4 md:rounded-ss-3xl">
                 <div class="flex flex-col text-stone-600 py-4 text-center">
                     <span class="text-xl md:text-2xl lg:text-4xl">20+</span>
                     <span class="text-xs text-stone-500">years of experience</span>
